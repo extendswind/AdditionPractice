@@ -1,18 +1,68 @@
-
 /* Application-wide Styles */
+
 h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-  text-align: center;
+  color: white;
+  font-family: sans;
+  font-size: 100%;
+  border-radius: 5px 5px 0px 0px;
+  background: #E44E40;
+  text-align: left;
+  padding: 10px;
 }
 
 body {
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
+  background: #F8F9FA;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+div.innerBody {
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 0px;
+  background: white;
+  width: 500px;
+  height: 100%;
+  margin-top: 0;
 }
 
 input {
-    width: 20px;
+  width: 2em;
+  vertical-align: middle;
+  margin-bottom: 0.2em;
+  font-size: 0.5em;
+}
+
+.question {
+  font-size: 250%;
+  color: black;
+  vertical-align: bottom;
+  background: #F8F9FA;
+  width: max-content;
+  align-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.button-line {
+  margin-bottom: 1em;
+}
+
+.button {
+  background: #4D93FD;
+  color: white;
+  padding: 0.5em 3em 0.5em 3em;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  margin-left: 3em;
+  margin-right: 3em;
 }
