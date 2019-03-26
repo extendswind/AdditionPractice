@@ -1,21 +1,19 @@
 {
-  "name": "electron-quick-start",
+  "name": "addition_practice",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/extendswind/AdditionPractice",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "practice",
+    "primery school"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "extendswind",
+  "license": "apache",
   "devDependencies": {
     "electron": "^4.1.1"
   }

@@ -1,5 +1,6 @@
-copy from electron-quick-start
 
-an simple addtion practive webpage for primary school
+A simple web page, and eletron is used but not necessary.
 
-just a simple web page, and eletron is not necessary.
+An simple addtion practive webpage for primary school.
+
+Just a test project for front end.
