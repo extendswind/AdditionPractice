@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/plus.css" type="text/css" />
   </head>
     <title>Addition Practice</title>
@@ -32,11 +33,14 @@
         rightNum += 1
         document.getElementById('rightNum').innerText = rightNum
       }
+      else if(result >=10){ // answer not right
+        document.getElementById("result").value = ""
+      }
     }
 
 
     function timerCountFun(){
-      if(isTimerStop == false){
+      if(isTimerStop == true){
         return ;
       }
       document.getElementById('timer').innerText = timerCount
@@ -49,13 +53,14 @@
       rightNum = 0;
       document.getElementById('rightNum').innerText = rightNum
       if(isTimerStop == true){
+        isTimerStop = false;
         timerCountFun();
       }
-      isTimerStop = true;
+      document.getElementById("result").focus();
     }
 
       function stopBtnClickEvent() {
-        isTimerStop = false;
+        isTimerStop = true;
       }
 
     </script>
@@ -66,7 +71,7 @@
   
       <div class="question">
         <label id="num1">1</label> <label>+</label> <label id="num2">1</label> <label>=</label>
-        <input id="result" onkeyup="inputKeyUpEvent()" onkeypress="limitNumberOnly(event)" />
+        <input id="result" oninput="inputKeyUpEvent()" onkeypress="limitNumberOnly(event)" />
       </div>
       <div class="button-line">
         <button class="button" id="startBtn" onclick="startBtnClickEvent()">START</button>
